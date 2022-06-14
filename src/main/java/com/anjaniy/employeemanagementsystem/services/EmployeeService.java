@@ -25,6 +25,7 @@ private final EmployeeRepository employeeRepository;
         employeeRepository.save(employee);
     }
 
+    @Transactional
     public Employee getEmployeeById(Long id){
         Optional<Employee> optionalEmployee = employeeRepository.findById(id);
         Employee employee = null;
@@ -36,6 +37,11 @@ private final EmployeeRepository employeeRepository;
             throw new RuntimeException("Employee Not Found For Given ID: " + id);
         }
         return employee;
+    }
+
+    @Transactional
+    public void deleteEmployeeById(Long id){
+        employeeRepository.deleteById(id);
     }
 }
 
