@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 @AllArgsConstructor
@@ -27,5 +29,11 @@ public class EmployeeController {
         //Create model Attribute To Bind The Form Data.
         model.addAttribute("employee", employee);
         return "add-employee.html";
+    }
+    @PostMapping("/saveEmployee")
+    public String saveEmployee(@ModelAttribute("employee") Employee employee){
+        //Save Employee To The Database:
+        employeeService.saveEmployee(employee);
+        return "redirect:/";
     }
 }

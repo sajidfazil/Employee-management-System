@@ -34,6 +34,5 @@ public class Employee {
     @NotBlank(message = "Email Address Is Required!")
     private String email;
 
-    @NotBlank(message = "Contact Number Is Required!")
     private long contactNo;
 }
