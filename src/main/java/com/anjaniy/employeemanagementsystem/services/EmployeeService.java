@@ -18,4 +18,9 @@ private final EmployeeRepository employeeRepository;
     public List<Employee> getAllEmployees(){
         return employeeRepository.findAll();
     }
+
+    @Transactional
+    public void saveEmployee(Employee employee){
+        employeeRepository.save(employee);
+    }
 }
