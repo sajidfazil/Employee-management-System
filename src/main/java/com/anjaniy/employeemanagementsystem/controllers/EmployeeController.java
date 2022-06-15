@@ -23,6 +23,7 @@ public class EmployeeController {
         return "index.html";
     }
 
+    //Show New Employee Form:
     @GetMapping("/showNewEmployeeForm")
     public String showNewEmployeeForm(Model model){
         Employee employee = new Employee();
@@ -30,6 +31,8 @@ public class EmployeeController {
         model.addAttribute("employee", employee);
         return "add-employee.html";
     }
+
+    //Save Employee To Database:
     @PostMapping("/saveEmployee")
     public String saveEmployee(@ModelAttribute("employee") Employee employee){
         //Save Employee To The Database:
@@ -37,6 +40,7 @@ public class EmployeeController {
         return "redirect:/";
     }
 
+    //Show Employee Update Form:
     @GetMapping("/showFormForUpdate/{id}")
     public String showFormForUpdate(@PathVariable (value = "id") Long id, Model model){
         //Get Employee From The Service:
@@ -47,6 +51,7 @@ public class EmployeeController {
         return "update-employee.html";
     }
 
+    //Delete Employee From Database:
     @GetMapping("/deleteEmployee/{id}")
     public String deleteEmployee(@PathVariable (value = "id") Long id){
         //Delete Employee From The Database:
