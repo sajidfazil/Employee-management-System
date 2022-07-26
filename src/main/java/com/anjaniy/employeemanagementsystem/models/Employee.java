@@ -1,8 +1,6 @@
 package com.anjaniy.employeemanagementsystem.models;
 
-import com.anjaniy.employeemanagementsystem.enums.EmployeeType;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -40,7 +38,7 @@ public class Employee {
     private String location;
 
     @NotBlank(message = "Employee Type Is Required")
-    private EmployeeType employeeType;
+    private String employeeType;
 
     @Email
     @NotBlank(message = "Email Address Is Required!")

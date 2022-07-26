@@ -18,7 +18,7 @@
 </nav>
 <div class="container">
     <hr/>
-    <h2>Update Employee</h2>
+    <h2 style="margin-bottom: 20px;">Update Employee</h2>
     <form action="#" th:action="@{/saveEmployee}" th:object = "${employee}" method="post">
         <!--Add Hidden Form Field To Handle Update-->
         <input type="hidden" th:field="*{id}"/>

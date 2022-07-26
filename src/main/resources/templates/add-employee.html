@@ -18,7 +18,7 @@
 </nav>
     <div class="container">
         <hr/>
-        <h2>Add Employee</h2>
+        <h2 style="margin-bottom: 20px;">Add Employee</h2>
         <form action="#" th:action="@{/saveEmployee}" th:object = "${employee}" method="post">
             <input type="text" th:field="*{employeeId}" placeholder="Employee ID" class="form-control mb-4 col-4" required>
             <input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control mb-4 col-4" required>
