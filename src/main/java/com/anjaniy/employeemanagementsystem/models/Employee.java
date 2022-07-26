@@ -1,5 +1,6 @@
 package com.anjaniy.employeemanagementsystem.models;
 
+import com.anjaniy.employeemanagementsystem.enums.EmployeeType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,6 +21,9 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Employee ID Is Required")
+    private String employeeId;
+
     @NotBlank(message = "First Name Is Required!")
     private String firstName;
 
@@ -29,9 +33,19 @@ public class Employee {
     @NotBlank(message = "Department Name Is Required!")
     private String departmentName;
 
+    @NotBlank(message = "Designation Is Required!")
+    private String designation;
+
+    @NotBlank(message = "Location")
+    private String location;
+
+    @NotBlank(message = "Employee Type Is Required")
+    private EmployeeType employeeType;
+
     @Email
     @NotBlank(message = "Email Address Is Required!")
     private String email;
 
-    private long contactNo;
+    @NotBlank(message = "Contact Number Is Required")
+    private String contactNo;
 }

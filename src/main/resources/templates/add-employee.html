@@ -20,11 +20,15 @@
         <hr/>
         <h2>Add Employee</h2>
         <form action="#" th:action="@{/saveEmployee}" th:object = "${employee}" method="post">
+            <input type="text" th:field="*{employeeId}" placeholder="Employee ID" class="form-control mb-4 col-4" required>
             <input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control mb-4 col-4" required>
             <input type="text" th:field="*{lastName}" placeholder="Last Name" class="form-control mb-4 col-4" required>
-            <input type="text" th:field="*{email}" placeholder="Email Address" class="form-control mb-4 col-4" required>
             <input type="text" th:field="*{departmentName}" placeholder="Department Name" class="form-control mb-4 col-4" required>
+            <input type="text" th:field="*{designation}" placeholder="Designation Name" class="form-control mb-4 col-4" required>
+            <input type="text" th:field="*{employeeType}" placeholder="Employee Type" class="form-control mb-4 col-4" required>
+            <input type="text" th:field="*{email}" placeholder="Email Address" class="form-control mb-4 col-4" required>
             <input type="tel" th:field="*{contactNo}" placeholder="Contact No" class="form-control mb-4 col-4" required>
+            <input type="tel" th:field="*{location}" placeholder="Location" class="form-control mb-4 col-4" required>
             <button type="submit" class="btn btn-success col-2">Add Employee</button>
         </form>
 
