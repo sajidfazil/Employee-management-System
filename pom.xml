@@ -14,7 +14,7 @@
 	<name>employee-management-system</name>
 	<description>Employee Management System Using Spring Boot. </description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
