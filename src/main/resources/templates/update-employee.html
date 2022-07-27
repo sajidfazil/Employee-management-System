@@ -9,7 +9,7 @@
           crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark m-3">
     <!-- Navbar content -->
     <a class="navbar-brand" href="#">
         <img src="https://i.postimg.cc/0j7Y7zp8/app-logo.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="app-logo">
@@ -22,15 +22,15 @@
     <form action="#" th:action="@{/saveEmployee}" th:object = "${employeeDto}" method="post">
         <!--Add Hidden Form Field To Handle Update-->
         <input type="hidden" th:field="*{id}"/>
-        <input type="text" th:field="*{employeeId}" placeholder="Employee ID" class="form-control mb-4 col-6" required>
-        <input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control mb-4 col-6" required>
-        <input type="text" th:field="*{lastName}" placeholder="Last Name" class="form-control mb-4 col-6" required>
-        <input type="text" th:field="*{departmentName}" placeholder="Department Name" class="form-control mb-4 col-6" required>
-        <input type="text" th:field="*{designation}" placeholder="Designation Name" class="form-control mb-4 col-6" required>
-        <input type="text" th:field="*{employeeType}" placeholder="Employee Type" class="form-control mb-4 col-6" required>
-        <input type="text" th:field="*{email}" placeholder="Email Address" class="form-control mb-4 col-6" required>
-        <input type="tel" th:field="*{contactNo}" placeholder="Contact No" class="form-control mb-4 col-6" required>
-        <input type="tel" th:field="*{location}" placeholder="Location" class="form-control mb-4 col-6" required>
+        <input type="text" th:field="*{employeeId}" placeholder="Employee ID" maxlength="7" class="form-control mb-4 col-6" required>
+        <input type="text" th:field="*{firstName}" placeholder="First Name" maxlength="15" class="form-control mb-4 col-6" required>
+        <input type="text" th:field="*{lastName}" placeholder="Last Name" maxlength="15" class="form-control mb-4 col-6" required>
+        <input type="text" th:field="*{departmentName}" placeholder="Department Name" maxlength="30" class="form-control mb-4 col-6" required>
+        <input type="text" th:field="*{designation}" placeholder="Designation Name" maxlength="30" class="form-control mb-4 col-6" required>
+        <input type="text" th:field="*{employeeType}" placeholder="Employee Type" maxlength="30" class="form-control mb-4 col-6" required>
+        <input type="email" th:field="*{email}" placeholder="Email Address" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a email address!" class="form-control mb-4 col-6" required>
+        <input type="tel" th:field="*{contactNo}" placeholder="Contact No" maxlength="10" pattern="[6789][0-9]{9}" title="Please enter a valid phone number!" class="form-control mb-4 col-6" required>
+        <input type="text" th:field="*{location}" placeholder="Location" maxlength="30" class="form-control mb-4 col-6" required>
         <button type="submit" class="btn btn-primary col-2">Update Employee</button>
     </form>
 
