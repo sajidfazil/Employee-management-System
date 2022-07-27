@@ -12,7 +12,7 @@
 <nav class="navbar navbar-dark bg-dark">
     <!-- Navbar content -->
     <a class="navbar-brand" href="#">
-        <img src="https://i.pinimg.com/736x/49/11/a9/4911a934710eede408be06cef5434004--free-icon-vector-icons.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="https://i.postimg.cc/0j7Y7zp8/app-logo.png" width="30" height="30" class="d-inline-block align-top" alt="app-logo">
         Employee Management System
     </a>
 </nav>
@@ -20,15 +20,15 @@
         <hr/>
         <h2 style="margin-bottom: 20px;">Add Employee</h2>
         <form action="#" th:action="@{/saveEmployee}" th:object = "${employeeDto}" method="post">
-            <input type="text" th:field="*{employeeId}" placeholder="Employee ID" class="form-control mb-4 col-4" required>
-            <input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control mb-4 col-4" required>
-            <input type="text" th:field="*{lastName}" placeholder="Last Name" class="form-control mb-4 col-4" required>
-            <input type="text" th:field="*{departmentName}" placeholder="Department Name" class="form-control mb-4 col-4" required>
-            <input type="text" th:field="*{designation}" placeholder="Designation Name" class="form-control mb-4 col-4" required>
-            <input type="text" th:field="*{employeeType}" placeholder="Employee Type" class="form-control mb-4 col-4" required>
-            <input type="text" th:field="*{email}" placeholder="Email Address" class="form-control mb-4 col-4" required>
-            <input type="tel" th:field="*{contactNo}" placeholder="Contact No" class="form-control mb-4 col-4" required>
-            <input type="tel" th:field="*{location}" placeholder="Location" class="form-control mb-4 col-4" required>
+            <input type="text" th:field="*{employeeId}" placeholder="Employee ID" class="form-control mb-4 col-6" required>
+            <input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control mb-4 col-6" required>
+            <input type="text" th:field="*{lastName}" placeholder="Last Name" class="form-control mb-4 col-6" required>
+            <input type="text" th:field="*{departmentName}" placeholder="Department Name" class="form-control mb-4 col-6" required>
+            <input type="text" th:field="*{designation}" placeholder="Designation Name" class="form-control mb-4 col-6" required>
+            <input type="text" th:field="*{employeeType}" placeholder="Employee Type" class="form-control mb-4 col-6" required>
+            <input type="text" th:field="*{email}" placeholder="Email Address" class="form-control mb-4 col-6" required>
+            <input type="tel" th:field="*{contactNo}" placeholder="Contact No" class="form-control mb-4 col-6" required>
+            <input type="tel" th:field="*{location}" placeholder="Location" class="form-control mb-4 col-6" required>
             <button type="submit" class="btn btn-success col-2">Add Employee</button>
         </form>
 

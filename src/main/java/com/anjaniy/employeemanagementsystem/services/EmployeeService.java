@@ -30,6 +30,7 @@ public class EmployeeService {
         employeeRepository.save(modelMapper.map(employeeDto, Employee.class));
     }
 
+    @Transactional
     public EmployeeDto getEmployeeById(Long id){
         Employee employee = employeeRepository.findById(id).orElseThrow(() -> new EmployeeNotFoundException("Employee Not Found For Given ID:" + id));
         return modelMapper.map(employee, EmployeeDto.class);
