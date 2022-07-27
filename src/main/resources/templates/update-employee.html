@@ -19,7 +19,7 @@
 <div class="container">
     <hr/>
     <h2 style="margin-bottom: 20px;">Update Employee</h2>
-    <form action="#" th:action="@{/saveEmployee}" th:object = "${employee}" method="post">
+    <form action="#" th:action="@{/saveEmployee}" th:object = "${employeeDto}" method="post">
         <!--Add Hidden Form Field To Handle Update-->
         <input type="hidden" th:field="*{id}"/>
         <input type="text" th:field="*{employeeId}" placeholder="Employee ID" class="form-control mb-4 col-4" required>

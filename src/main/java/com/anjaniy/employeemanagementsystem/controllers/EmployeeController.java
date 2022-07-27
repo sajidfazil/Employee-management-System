@@ -1,6 +1,6 @@
 package com.anjaniy.employeemanagementsystem.controllers;
 
-import com.anjaniy.employeemanagementsystem.models.Employee;
+import com.anjaniy.employeemanagementsystem.dto.EmployeeDto;
 import com.anjaniy.employeemanagementsystem.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,17 +26,17 @@ public class EmployeeController {
     //Show New Employee Form:
     @GetMapping("/showNewEmployeeForm")
     public String showNewEmployeeForm(Model model){
-        Employee employee = new Employee();
+        EmployeeDto employeeDto = new EmployeeDto();
         //Create model Attribute To Bind The Form Data.
-        model.addAttribute("employee", employee);
+        model.addAttribute("employeeDto", employeeDto);
         return "add-employee.html";
     }
 
     //Save Employee To Database:
     @PostMapping("/saveEmployee")
-    public String saveEmployee(@ModelAttribute("employee") Employee employee){
+    public String saveEmployee(@ModelAttribute("employeeDto") EmployeeDto employeeDto){
         //Save Employee To The Database:
-        employeeService.saveEmployee(employee);
+        employeeService.saveEmployee(employeeDto);
         return "redirect:/";
     }
 
@@ -44,10 +44,10 @@ public class EmployeeController {
     @GetMapping("/showFormForUpdate/{id}")
     public String showFormForUpdate(@PathVariable (value = "id") Long id, Model model){
         //Get Employee From The Service:
-        Employee employee = employeeService.getEmployeeById(id);
+        EmployeeDto employeeDto = employeeService.getEmployeeById(id);
 
         //Set Employee As A Model Attribute To Pre-Populate Form.
-        model.addAttribute("employee", employee);
+        model.addAttribute("employeeDto", employeeDto);
         return "update-employee.html";
     }
 
