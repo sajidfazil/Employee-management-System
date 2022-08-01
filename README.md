@@ -2,4 +2,7 @@
 
 <h2>Tech-Stack / Technologies:</h2>
 
-- George Washington
+- Spring Boot
+- Thymeleaf
+- PostgreSQL
+- Heroku (For Deployment)
