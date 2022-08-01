@@ -20,3 +20,12 @@
   - Bootstrap 4.0 
 
 <h2>Maven-Dependencies:</h2>
+
+- Spring Web
+- Lombok
+- Spring Data JPA
+- PostgreSQL Driver
+- Thymeleaf
+- Spring Boot Dev Tools
+- ModelMapper
+- Spring Boot Starter Validation
