@@ -1,7 +1,7 @@
 # Employee Management System
 
 <h2>Project Live Link:</h2>
-<h2>Link</h2>
+<h2>Link: https://employee-management-system-sb.herokuapp.com/</h2>
 
 <h2>Project Summery:</h2>
 
