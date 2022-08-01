@@ -1,6 +1,6 @@
 # Employee Management System
 
-<h2>Tech-Stack / Technologies:</h2>
+<h2>Project Tech-Stack / Technologies:</h2>
 
 - Spring Boot
 - Thymeleaf
