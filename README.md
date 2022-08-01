@@ -13,6 +13,7 @@
 <h2>Tech-Stack / Technologies:</h2>
 
 - Backend:
+  - Java 1.8
   - Spring Boot
   - PostgreSQL
   - Heroku (For Deployment)
