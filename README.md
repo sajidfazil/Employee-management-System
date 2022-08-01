@@ -10,8 +10,13 @@
 
 - Backend:
   - Spring Boot
-  - Thymeleaf
   - PostgreSQL
   - Heroku (For Deployment)
+  
+- Frontend:
+  - Thymeleaf
+  - HTML
+  - CSS
+  - Bootstrap 4.0 
 
 
