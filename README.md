@@ -39,11 +39,11 @@
 
 <h3>Home : </h3>
 
-![Screenshot](/src/main/resources/screenshots/home.PNG)
+![Screenshot](/src/main/resources/images/home.PNG)
 
 <h3>Add Employee : </h3>
 
-![Screenshot](/screenshots/add-employee.PNG)
+![Screenshot](/src/main/resources/images/add-employee.PNG)
 
 <h3>Login User : </h3>
 
