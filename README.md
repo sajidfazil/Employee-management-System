@@ -34,3 +34,45 @@
   - Spring Boot Dev Tools
   - ModelMapper
   - Spring Boot Starter Validation
+  
+<h2>Application Screenshots: </h2>
+
+<h3>Home : </h3>
+
+![Screenshot](/src/main/resources/screenshots/home.PNG)
+
+<h3>Add Employee : </h3>
+
+![Screenshot](/screenshots/add-employee.PNG)
+
+<h3>Login User : </h3>
+
+![Screenshot](/screenshots/login.PNG)
+
+<h3>Posts / Feeds : </h3>
+
+![Screenshot](/screenshots/posts-list.PNG)
+
+<h3>Create Subreddit : </h3>
+
+![Screenshot](/screenshots/create-subreddit.PNG)
+
+<h3>Create Post : </h3>
+
+![Screenshot](/screenshots/create-post.PNG)
+
+<h3>Create Comment : </h3>
+
+![Screenshot](/screenshots/create-comment.PNG)
+
+<h3>View Post : </h3>
+
+![Screenshot](/screenshots/view-post.PNG)
+
+<h3>View Profile : </h3>
+
+![Screenshot](/screenshots/view-profile.PNG)
+
+<h3>Home (Without Login) : </h3>
+
+![Screenshot](/screenshots/home.PNG)
