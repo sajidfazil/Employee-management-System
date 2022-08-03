@@ -59,4 +59,4 @@
 
 <h3>Delete Employee : </h3>
 
-![Screenshot](/src/main/resources/images/delete-employee.PNG)
+![Screenshot](/src/main/resources/images/home.PNG)
