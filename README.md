@@ -45,9 +45,9 @@
 
 ![Screenshot](/src/main/resources/images/add-employee.PNG)
 
-<h3>Login User : </h3>
+<h3>Added Empployee : </h3>
 
-![Screenshot](/screenshots/login.PNG)
+![Screenshot](/src/main/resources/images/added-employee.PNG)
 
 <h3>Posts / Feeds : </h3>
 
