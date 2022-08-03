@@ -49,13 +49,13 @@
 
 ![Screenshot](/src/main/resources/images/added-employee.PNG)
 
-<h3>Posts / Feeds : </h3>
+<h3>Update Employee : </h3>
 
-![Screenshot](/screenshots/posts-list.PNG)
+![Screenshot](/src/main/resources/images/update-employee.PNG)
 
-<h3>Create Subreddit : </h3>
+<h3>Updated Empployee : </h3>
 
-![Screenshot](/screenshots/create-subreddit.PNG)
+![Screenshot](/screenshots/updated-subreddit.PNG)
 
 <h3>Create Post : </h3>
 
