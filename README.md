@@ -55,24 +55,8 @@
 
 <h3>Updated Empployee : </h3>
 
-![Screenshot](/screenshots/updated-subreddit.PNG)
+![Screenshot](/src/main/resources/images/updated-employee.PNG)
 
-<h3>Create Post : </h3>
+<h3>Delete Employee : </h3>
 
-![Screenshot](/screenshots/create-post.PNG)
-
-<h3>Create Comment : </h3>
-
-![Screenshot](/screenshots/create-comment.PNG)
-
-<h3>View Post : </h3>
-
-![Screenshot](/screenshots/view-post.PNG)
-
-<h3>View Profile : </h3>
-
-![Screenshot](/screenshots/view-profile.PNG)
-
-<h3>Home (Without Login) : </h3>
-
-![Screenshot](/screenshots/home.PNG)
+![Screenshot](/src/main/resources/images/delete-employee.PNG)
