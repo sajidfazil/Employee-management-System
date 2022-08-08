@@ -34,3 +34,29 @@
   - Spring Boot Dev Tools
   - ModelMapper
   - Spring Boot Starter Validation
+  
+<h2>Application Screenshots: </h2>
+
+<h3>Home : </h3>
+
+![Screenshot](/src/main/resources/images/home.PNG)
+
+<h3>Add Employee : </h3>
+
+![Screenshot](/src/main/resources/images/add-employee.PNG)
+
+<h3>Added Empployee : </h3>
+
+![Screenshot](/src/main/resources/images/added-employee.PNG)
+
+<h3>Update Employee : </h3>
+
+![Screenshot](/src/main/resources/images/update-employee.PNG)
+
+<h3>Updated Empployee : </h3>
+
+![Screenshot](/src/main/resources/images/updated-employee.PNG)
+
+<h3>Delete Employee : </h3>
+
+![Screenshot](/src/main/resources/images/home.PNG)
