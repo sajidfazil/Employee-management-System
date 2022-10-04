@@ -1,8 +1,8 @@
 # Employee Management System
 
-<h2>Project Live Link: https://employee-management-system-sb.herokuapp.com</h2>
+<h2>Project Live Link: "https://employee234.herokuapp.com/"</h2>
 
-<h2>Working Demonstration Video Link: https://youtu.be/gAC42Q5QKTE</h2>
+
 
 <h2>Project Summery:</h2>
 
